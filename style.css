@@ -69,11 +69,6 @@ body {
    
   }
   
-  .social-media a {
-    color: #fff;
-    font-size: 20px; 
-    display: inline-flex; 
-  }
   
   /* contact form */
   input[type=text], select, textarea {
@@ -131,4 +126,7 @@ footer .card {
 
 footer .card-body {
   flex: 1;
+}
+footer .card-body.list-unstyled {
+  text-align: center;
 }
