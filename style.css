@@ -2,11 +2,9 @@ body {
     font-family: "Lato", sans-serif;
     background-repeat: repeat-x;
       margin: 0;
-      height: 100vh;
-      background: rgb(37, 231, 95);
+          background: rgb(37, 231, 95);
       animation: mymove 5s infinite;
      }
-
 
      .sidenav {
       height: 100%;
@@ -42,11 +40,6 @@ body {
       margin-left: 50px;
     }
     
-    #main {
-      transition: margin-left .5s;
-
-    }
-    
     @media screen and (max-height: 450px) {
       .sidenav 
       .sidenav a {font-size: 18px;}
@@ -56,6 +49,8 @@ body {
   img {
     border-radius: 50%;
   }
+
+
 /* copywriting */
 .typewriter {
   overflow: hidden; 
@@ -70,10 +65,6 @@ body {
   to { width: 100% }
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
 
   /* social media */
   .social-media {
@@ -123,7 +114,7 @@ footer {
   text-align: center;
 }
 
-footer .card {
+footer.card {
   height: 100%;
   transition: all 0.3s;
   display: flex;
@@ -133,7 +124,5 @@ footer .card {
 footer .card-body {
   flex: 1;
 }
-footer .card-body.list-unstyled {
-  text-align: center;
-}
+
 
