@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Joseph Mutunga - Full-Stack Developer</title>
+    <title>Joseph Mutunga</title>
     <link rel="icon" type="image/x-icon" href="image/portfolio.png">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -17,32 +17,30 @@
 </head>
 
 <body style="background-image: url(image/back.png);">
-
-
     <!-- Navbar -->
-    <div id="mySidenav" class="sidenav ">
-        <nav>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a><img src="image/pf.png" alt="Avatar" style="width:150px"></a>
-            <a>
-                <h4 style="color: white;">Joseph Mutunga</h4>
-            </a>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav class="text-center">
+            <img src="image/pf.png" alt="Avatar" style="width:150px">
+            <h4 style="color: rgb(201, 74, 43);">Joseph Mutunga</h4>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-
         </nav>
     </div>
-
     <div id="main">
-        <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span class="navbar navbar-light bg-light" id="menu-icon" style="font-size:30px;cursor:pointer"
+            onclick="openNav()">&#9776;</span>
 
         <!-- Home -->
-        <div id="home" class="container mt-5">
-            <h1 style="text-align: center;">Joseph Mutunga</h1>
-            <p style="text-align: center;">Passionate Full-Stack Developer</p>
+        <div id="home" class="container">
+            <div class="typewriter">
+                <h1 style="text-align: center;"></h1>
+                <p style="text-align: center;"></p>
+            </div>
 
             <div class="card mb-3">
                 <div class="row g-0">
@@ -52,16 +50,31 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Welcome!</h5>
-                            <p class="card-text">I am Joseph Mutunga, a passionate full-stack developer focused
-                                on creating user-centric and efficient software solutions. My expertise lies in:
+                            <p class="card-text">I am Joseph Mutunga, a passionate full-stack developer and mobile app
+                                developer
+                                focused on creating user-centric and efficient software solutions. My expertise lies in:
                             </p>
-                            <ol>
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>JavaScript</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                            </ol>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Web development</h5>
+                                    <ol>
+                                        <li>Html and CSS</li>
+                                        <li>javascript</li>
+                                        <li>React native and Nodejs</li>
+                                        <li>Python(Django)</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Mobile App Development</h5>
+                                    <ol>
+                                        <li>Android Studio(java)</li>
+                                        <li>React native and Nodejs</li>
+                                        <li>Fulutter(Dart)</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+
                             <p>Let's build something amazing together!</p>
                         </div>
                     </div>
@@ -73,17 +86,23 @@
         </div>
 
         <!-- About Me -->
-        <div id="about" class="container mt-5">
+        <div id="about" class="container mt-3">
+            <h5 class="card-title">About Me</h5>
             <div class="card mb-3 h-100">
                 <div class="row g-0">
 
                     <div class="card-body">
-                        <h5 class="card-title">About Me</h5>
-                        <p class="card-text">I am Joseph Mutunga, a dedicated software developer with a strong focus
-                            on full-stack development. I have a passion for creating user-friendly and efficient
-                            applications. With a background in both front-end and back-end technologies, I strive to
-                            deliver high-quality solutions that meet client needs. In my free time, I enjoy learning
-                            new programming languages and exploring the latest tech trends.</p>
+
+                        <p class="card-text">I am <strong>Joseph Mutunga</strong> ,I hold a degree in bachelor of
+                            science in information
+                            technology from <strong>Dedadn Kimathi University of Technology</strong>,a dedicated
+                            software developer with a strong focus
+                            on full-stack web and App development . I have a passion for creating user-friendly and
+                            efficient applications. With a background of <strong><span
+                                    id="experienceYears"></span></strong> in
+                            both front-end and back-end technologies, I strive to deliver high-quality solutions that
+                            meet client needs. In my free time, I enjoy learning new programming languages and exploring
+                            the latest tech trends.</p>
                     </div>
 
                 </div>
@@ -91,36 +110,29 @@
         </div>
 
         <!-- Skills -->
-        <div id="skills" class="container mt-5">
+        <div id="skills" class="container mt-3">
             <h2>Skills</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/img.png" class="card-img-top" alt="React">
+                        <img src="image/react.png" class="card-img-top" alt="React">
                         <div class="card-body">
-                            <h5 class="card-title">React</h5>
-                            <p class="card-text">Proficient in building dynamic and responsive web applications using
-                                React. Experience with hooks, state management, and component-based architecture.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="image/img.png" class="card-img-top" alt="Node.js">
-                        <div class="card-body">
-                            <h5 class="card-title">Node.js</h5>
-                            <p class="card-text">Skilled in server-side development with Node.js. Expertise in building
+                            <h5 class="card-title">React and Nodejs</h5>
+                            <p class="card-text">Proficient in building dynamic and responsive web and mobile
+                                applications using
+                                React. Skilled in server-side development with Node.js. Expertise in building
                                 RESTful APIs, working with databases, and implementing authentication and authorization.
                             </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/img.png" class="card-img-top" alt="JavaScript">
+                        <img src="image/js.png" class="card-img-top" alt="JavaScript">
                         <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">Extensive experience with JavaScript, including ES6+ features,
+                            <h5 class="card-title">HTML,CSS And JavaScript</h5>
+                            <p class="card-text">Extensive experience with JavaScript, including js5 features,
                                 asynchronous programming, and DOM manipulation. Strong understanding of front-end
                                 frameworks and libraries.</p>
                         </div>
@@ -128,7 +140,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/img.png" class="card-img-top" alt="Java">
+                        <img src="image/java.png" class="card-img-top" alt="Java">
                         <div class="card-body">
                             <h5 class="card-title">Java</h5>
                             <p class="card-text">Well-versed in Java programming for developing scalable and
@@ -139,11 +151,11 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/img.png" class="card-img-top" alt="Python">
+                        <img src="image/dja.png" class="card-img-top" alt="Python">
                         <div class="card-body">
                             <h5 class="card-title">Python</h5>
-                            <p class="card-text">Proficient in Python for web development, data analysis, and
-                                automation. Experience with frameworks like Django and Flask, as well as libraries like
+                            <p class="card-text">Proficient in Python for web development and data analysis. Experience
+                                with frameworks like Django, as well as libraries like
                                 Pandas and NumPy.</p>
                         </div>
                     </div>
@@ -152,15 +164,15 @@
         </div>
 
         <!-- Projects -->
-        <div id="projects" class="container mt-5">
+        <div id="projects" class="container mt-3">
             <h2>Projects</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/project1.png" class="card-img-top" alt="Project 1">
+                        <img src="image/farm.png" class="card-img-top" alt="Project 1">
                         <div class="card-body">
-                            <h5 class="card-title">Project 1: E-Commerce Website</h5>
-                            <p class="card-text">Developed a full-featured e-commerce website using React and Node.js.
+                            <h5 class="card-title">Project 1: Farm App</h5>
+                            <p class="card-text">Developed a full-featured Farm App using flutter.
                                 Implemented features like product listings, shopping cart, user authentication, and
                                 payment processing.</p>
 
@@ -169,24 +181,25 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/project2.png" class="card-img-top" alt="Project 2">
+                        <img src="image/vehicle.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
-                            <h5 class="card-title">Project 2: Social Media App</h5>
-                            <p class="card-text">Created a social media application with real-time messaging, post
-                                creation, and user profiles. Utilized React for the front-end and Firebase for the
-                                back-end.</p>
+                            <h5 class="card-title">Project 2: Vehicle App</h5>
+                            <p class="card-text">Created a Vehicle Hub application with real-time messaging, post
+                                creation, and user profiles. Utilized Android Studio for the front-end and Firebase for
+                                the
+                                back-end.user would be able to buy and sell vehicles.</p>
 
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="image/project3.png" class="card-img-top" alt="Project 3">
+                        <img src="image/port.png" class="card-img-top" alt="Project 3">
                         <div class="card-body">
                             <h5 class="card-title">Project 3: Portfolio Website</h5>
                             <p class="card-text">Designed and developed a personal portfolio website to showcase my
                                 skills and projects. Implemented responsive design and interactive elements using
-                                Bootstrap and
+                                Bootstrap5 and HTML,css and javascript.
                             </p>
                         </div>
                     </div>
@@ -195,29 +208,29 @@
         </div>
 
         <!-- Footer -->
-        <footer id="contact" class="container mt-5">
+        <footer id="contact" class="container mt-3">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <h5 class="card-title">Contact Information</h5>
-                            <ul class="list-unstyled">
-                                <p  class="text-start m-3"><i class="fas fa-envelope"> </i>josephmutunga39@gmail.com</p>
-                                <p class="text-start m-3"><i class="fas fa-phone"></i> +254759962133</p>
-                            </ul>
+
+                            <p class="text-start m-3"><i class="fas fa-envelope"> </i>josephmutunga39@gmail.com</p>
+                            <p class="text-start m-3"><i class="fas fa-phone"></i> +254759962133</p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body ">
                             <h5 class="card-title">Connect with Me</h5>
-                            <ul class="list-unstyled">
-                                <p class="text-start "><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></p>
-                                <p class="text-start "><a href="#"><i class="fab fa-twitter"></i>Twitter</a></p>
-                                <p class="text-start "><a href="#"><i class="fab fa-github"></i> GitHub</a></p>
-                                <p class="text-start "><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
-                            </ul>
+
+                            <p class="text-start "><i class="fab fa-whatsapp"></i><a href="#"></i> Whatsapp</a></p>
+                            <p class="text-start "><i class="fab fa-twitter"></i><a href="#"></i> Twitter</a></p>
+                            <p class="text-start "><i class="fab fa-github"></i><a href="#"></i> GitHub</a></p>
+                            <p class="text-start "><i class="fab fa-twitter"></i><a href="#"></i> Twitter</a></p>
+
                         </div>
                     </div>
                 </div>
@@ -235,7 +248,7 @@
 
     </div>
 
-    <footer>All rights reserved @ Joselivia<p id="date"></p>
+    <footer>All rights reserved by Joselivia as per Today<p id="date"></p>
     </footer>
 
 
